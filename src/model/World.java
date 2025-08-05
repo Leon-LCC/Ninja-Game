@@ -1,20 +1,18 @@
 package model;
 
+import controller.*;
 import java.awt.*;
 import java.util.ArrayList;
+import static java.util.Arrays.stream;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
-
-import static java.util.Arrays.stream;
 import static java.util.stream.Collectors.toSet;
-
-import controller.*;
 import map.conversation.MapConversation;
+import map.mapItems.Gems;
 import map.mapItems.Portal;
 import media.AudioPlayer;
 import monster.Gem;
-import map.mapItems.Gems;
 import ninja.Ninja;
 
 
@@ -52,7 +50,7 @@ public class World {
             texts.add("Stand up! Ninja!");
             texts.add("The world needs you!");
             texts.add("Press ENTER to restart.");
-            texts.add("(May the God of Ninja be with you!)");
+            texts.add("(May the force be with you!)");
             int[] lines_per_page = {4};
             maps.get(currentMap).setConversation(new MapConversation(new Point(280, 20), new Dimension(750, 400), 1, texts,  lines_per_page, titles));
         }
