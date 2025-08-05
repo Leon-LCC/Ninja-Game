@@ -1,5 +1,5 @@
 # Ninja-Game
-A 2D side-scrolling game built with Java
+A 2D side-scrolling game built with Java. See the [demo](https://youtu.be/S92kdNGZjdc).
 
 ![Game Scene](./GameScene.png)
 
